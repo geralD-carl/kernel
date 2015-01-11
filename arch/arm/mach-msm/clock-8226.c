@@ -3426,6 +3426,9 @@ static struct clk_lookup msm_clocks_8226[] = {
 	/* eeprom clocks */
 	CLK_LOOKUP("cam_src_clk", mclk0_clk_src.c, "6c.qcom,eeprom"),
 	CLK_LOOKUP("cam_clk", camss_mclk0_clk.c, "6c.qcom,eeprom"),
+
+	/* NFC */
+	CLK_LOOKUP("nfc_clk",            cxo_d1_pin.c, "2-0028"),
 #endif
 
 	CLK_LOOKUP("cam_src_clk", mclk0_clk_src.c, "18.qcom,eeprom"),
